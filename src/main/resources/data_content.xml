@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+    <bean id="nodeA" class="com.ScheduleSystem.domain.taskmanagment.graph.Node">
+        <property name="name" value="A"/>
+    </bean>
+
+    <bean id="nodeB" class="com.ScheduleSystem.domain.taskmanagment.graph.Node">
+        <constructor-arg index="0" type="java.lang.String" value="B"/>
+    </bean>
+
+    <bean id="nodeC" class="com.ScheduleSystem.domain.taskmanagment.graph.Node">
+        <constructor-arg index="0" type="java.lang.String" value="C"/>
+    </bean>
+
+    <bean id="nodeD" class="com.ScheduleSystem.domain.taskmanagment.graph.Node">
+        <constructor-arg index="0" type="java.lang.String" value="D"/>
+    </bean>
+
+    <bean id="nodeE" class="com.ScheduleSystem.domain.taskmanagment.graph.Node">
+        <constructor-arg index="0" type="java.lang.String" value="E"/>
+    </bean>
+
+    <bean id="nodeF" class="com.ScheduleSystem.domain.taskmanagment.graph.Node">
+        <constructor-arg index="0" type="java.lang.String" value="F"/>
+    </bean>
+
+
+    <bean id="graphName" class="java.lang.String">
+        <constructor-arg index="0" value="graphName"/>
+    </bean>
+
+    <bean id="graph" class="com.ScheduleSystem.domain.taskmanagment.graph.Graph">
+        <!--<property name="name" ref="gr"-->
+    </bean>
+
+
+
+
+</beans>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+       <bean id="employeeValidator" class="com.ScheduleSystem.validators.EmployeeValidator">
+              <property name="addressValidator" ref="addressValidator"/>
+              <property name="roleValidator" ref="roleValidator"/>
+       </bean>
+
+       <bean id="addressValidator" class="com.ScheduleSystem.validators.AddressValidator"/>
+
+       <bean id="roleValidator" class="com.ScheduleSystem.validators.RoleValidator">
+              <property name="privilegeValidator" ref="privilegeValidator"/>
+       </bean>
+
+       <bean id="privilegeValidator" class="com.ScheduleSystem.validators.PrivilegeValidator"/>
+
+</beans>

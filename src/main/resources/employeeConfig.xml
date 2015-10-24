@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+       <bean id="Wojciech_Seliga" class="com.ScheduleSystem.domain.employees.Employee">
+              <constructor-arg name="name" value="Wojciech"/>
+              <constructor-arg name="lastname" value="Seliga"/>
+              <constructor-arg name="birth" value="2015/10/12"/>
+              <constructor-arg name="email" value="wojciech_seliga@gmail.com"/>
+              <constructor-arg name="telephoneNumber" value="123456789"/>
+              <constructor-arg name="address" ref="Warsaw_Wiejska13"/>
+       </bean>
+
+       <bean id="Warsaw_Wiejska13" class="com.ScheduleSystem.domain.employees.Address">
+              <constructor-arg name="country" value="Poland"/>
+              <constructor-arg name="city" value="Warsaw"/>
+              <constructor-arg name="street" value="Wiejska"/>
+              <constructor-arg name="zipCode" value="30-330 Warsaw"/>
+       </bean>
+
+</beans>
